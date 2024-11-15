@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Pet Care Service Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+<body>
+<h1 id="title">Pet Care Service Survey Form</h1>
+<p id="description"><em>Thank you for taking the time to help us improve the platform</em></p>
+
+<form id="survey-form">
+  <fieldset>
+    <label for="name" id="name-label"> NAME <input id="name" type="text" placeholder=" Enter your name" name="name" required></label>
+    <label for="email" id="email-label"> EMAIL <input id="email" type="email" placeholder=" Enter your email" name="email"  required></label>
+    <label for="age" id="number-label"> AGE (optional) <input id="number" type="number" min="10" max="99" placeholder=" Age" name="age"></label>
+  </fieldset>
+
+  <fieldset>
+  <label for="dropdown">Which option best describes your current ?
+  <select id="dropdown" name="dropdown">
+    <option value=""> Select one </option>
+    <option value="1">I have 1 dog.</option>
+    <option value="2">I have 2 dogs.</option>
+    <option value="3">I have 1 cat.</option>
+    <option value="4">I have 2 cats.</option>
+    <option value="5">I have more than 2 dogs or cats.</option>
+  </select>
+  </label>
+  </fieldset>
+
+  <fieldset>
+  <legend>Would you recommend Pets Millennial services to a friend ?</legend>
+  <label for="high-recommend"><input type="radio" id="high-recommend" name="recommend-level" class="inline" value="3" checked>Definitely</label>
+  <label for="medium-recommend"><input type="radio" id="medium-recommend" name="recommend-level" class="inline" value="2">Maybe</label>
+  <label for="low-recommend"><input type="radio" id="low-recommend" name="recommend-level" class="inline" value="1">Not Sure</label>
+  </fieldset>
+
+<fieldset>
+<label for="dropdown">What is the service you book with us ?
+<select id="dropdown" name="dropdown">
+    <option value="">Select one</option>
+    <option value="1">Boarding</option>
+    <option value="2">Day Care</option>
+    <option value="3">Grooming</option>
+    <option value="4">Dog Walking</option>
+    <option value="5">Drop-In Service</option>
+    <option value="6">Pet Taxi</option>
+  </select>
+  </label>
+</fieldset>
+
+<fieldset>
+  <label> What would you like to see improved? (Check all that apply)
+  <label for="location">
+    <input type="checkbox" id="location" name="location" value="location" class="inline"> Location</label>
+  <label for="pricing" >
+    <input type="checkbox" id="pricing" name="pricing" value="pricing" class="inline"> Pricing</label>
+  <label for="service">
+    <input type="checkbox" id="service" name="service" value="service" class="inline"> Service</label>
+  <label for="environment">
+    <input type="checkbox" id="environment" name="environment" value="environment" class="inline"> Environment</label>
+  <label for="professional">
+    <input type="checkbox" id="professional" name="professional" value="professional" class="inline"> Professional</label>
+  </label>
+  </fieldset>
+
+<fieldset>
+  <label> Any comments or suggestions? <textarea rows="3" cols="30" placeholder="Enter your comment here..."></textarea></label>
+  <label><input type="submit" id="submit"></label>
+</fieldset>
+</form>
+</body>
+</html>
